@@ -1,5 +1,46 @@
-
-
-body{
-
+body {
+  @extend %roboto-400;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.button-red {
+  border: none;
+  display: inline-block;
+  background-color: #9b1818;
+  padding: 17px 35px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  @extend %roboto-700;
+  font-size: 16px;
+}
+.button-green {
+  border: none;
+  display: inline-block;
+  background-color: #67bc5c;
+  padding: 17px 35px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  @extend %roboto-700;
+  font-size: 16px;
+}
+.button-white {
+  border: none;
+  display: inline-block;
+  background-color: #fff;
+  padding: 17px 35px;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+  @extend %roboto-700;
+  font-size: 16px;
 }

@@ -1,9 +1,222 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+.header {
+  min-height: 640px;
+  background-image: url("../images/top_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+.row {
+  &__logo {
+    @extend %roboto-700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #fff;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    display: block;
+  }
+  &__name {
+    text-align: end;
+  }
+  &__info-link {
+    @extend %roboto-400;
+    font-size: 16px;
+    line-height: 45px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__span {
+    margin: 0 5px;
+    color: #fff;
+  }
+  &__tel {
+    font-size: 35px;
+    line-height: 45px;
+    @extend %roboto-700;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.row-content {
+  &__title {
+    @extend %CleanvertisingLight-700;
+    font-weight: normal;
+    line-height: 56px;
+    font-size: 55px;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    @extend %CleanvertisingLight-700;
+    font-weight: normal;
+    line-height: 46px;
+    font-size: 36px;
+    color: #fff;
+  }
+}
+.tabs__header {
+  margin-top: 25px;
+  .tabs {
+    .tab {
+      @extend %roboto-700;
+      font-size: 16px;
+      line-height: 62px;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #fff;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-right: -4px;
+      transition: all .3s;
+      &.active {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #000;
+      }
+    }
+  }
+}
+.tab__content {
+  max-width: 635px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 15px;
+  position: relative;
+}
+.tab__item {
+  position: relative;
+}
+.tab__list-item-one::before {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 35px;
+  background-image: url('../images/svg-icons/head.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+}
+.tab__list-item-two::before {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/svg-icons/burger.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 5px;
+  top: 72px;
+}
+.tab__list-item-three::before {
+  position: absolute;
+  content: '';
+  width: 37px;
+  height: 37px;
+  background-image: url('../images/svg-icons/world.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 120px;
+}
+.tab__list-item{
+  @extend %roboto-700;
+  color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  padding-left: 50px;
+  margin-bottom: 27px;
+}
+.wrapper .active {
+  color: red;
+}
+.tab__item {
+  display: none;
+}
+.tab__item:first-child {
+  display: block;
+}
+.tab__content-btn{
+  text-align: right;
+  margin-bottom: 16px;
+}
+.tizers {
+  background-color: #cadaef;
+  background-image: linear-gradient( 180deg, #cadaef 1000%, #cadaef 20%);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__years {
+    display: flex;
+  }
+  &__text-one {
+    @extend %roboto-400;
+    font-size: 75px;
+    line-height: 34px;
+    letter-spacing: -10px;
+    color: $blue-color;
+    font-weight: normal;
+  }
+  &__methods {
+    display: flex;
+  }
+  &__teachers {
+    display: flex;
+  }
+  &__ielts {
+    display: flex;
+  }
+  &__desc {
+    margin-top: -15px;
+    color: $blue-color;
+    text-transform: uppercase;
+  }
+  &__desc-methods {
+    margin-top: 3px;
+  }
+  &__desc-teachers {
+    margin-top: 9px;
+  }
+  &__desc-ielts {
+    margin-top: -7px;
+  }
+  &__title {
+    @extend %CleanvertisingLight-700;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left: 15px;
+    width: 100%;
+  }
+  &__text {
+    @extend %CleanvertisingLight-700;
+    font-size: 19px;
+    line-height: 29px;
+    margin-left: 15px;
+    width: 100%;
+  }
+}
 
 
 
-
-@import 'media';
+@import "media";
